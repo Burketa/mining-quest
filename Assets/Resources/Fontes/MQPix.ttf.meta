@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 9863b9de19b48b44c98600c845bd0e46
+timeCreated: 1493141683
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: MQPix
+  fontNames:
+  - MQPix
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

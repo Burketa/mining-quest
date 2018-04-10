@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b0ccb5dc20ae94c4bbc61d690f40e85b
+timeCreated: 1494297105
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: MM01
+  fontNames:
+  - MM01
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ea63baa8422ba324e998c38b8ca6c089, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

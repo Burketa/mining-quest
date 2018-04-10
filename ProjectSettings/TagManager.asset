@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Background_Small
+  - Background_Medium
+  - Background_Large
+  - Collector
+  - Bob
+  - GameManager
+  - Item
+  - Score
+  - Popups
+  - Bouncer
+  - Powerdown
+  - Skull
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Terrain
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1373127861
+    locked: 0
+  - name: Middleground
+    uniqueID: 3735613733
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1625094403
+    locked: 0
+  - name: UI
+    uniqueID: 411541049
+    locked: 0

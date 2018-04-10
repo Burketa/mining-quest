@@ -1,0 +1,770 @@
+fileFormatVersion: 2
+guid: 5d8d0cd9f3fe1ba4caad4e577cbadb66
+timeCreated: 1493142086
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bobSpriteSheet01(26x34)_0
+    21300002: bobSpriteSheet01(26x34)_1
+    21300004: bobSpriteSheet01(26x34)_2
+    21300006: bobSpriteSheet01(26x34)_3
+    21300008: bobSpriteSheet01(26x34)_4
+    21300010: bobSpriteSheet01(26x34)_5
+    21300012: bobSpriteSheet01(26x34)_6
+    21300014: bobSpriteSheet01(26x34)_7
+    21300016: bobSpriteSheet01(26x34)_8
+    21300018: bobSpriteSheet01(26x34)_9
+    21300020: bobSpriteSheet01(26x34)_10
+    21300022: bobSpriteSheet01(26x34)_11
+    21300024: bobSpriteSheet01(26x34)_12
+    21300026: bobSpriteSheet01(26x34)_13
+    21300028: bobSpriteSheet01(26x34)_14
+    21300030: bobSpriteSheet01(26x34)_15
+    21300032: bobSpriteSheet01(26x34)_16
+    21300034: bobSpriteSheet01(26x34)_17
+    21300036: bobSpriteSheet01(26x34)_18
+    21300038: bobSpriteSheet01(26x34)_19
+    21300040: bobSpriteSheet01(26x34)_20
+    21300042: bobSpriteSheet01(26x34)_21
+    21300044: bobSpriteSheet01(26x34)_22
+    21300046: bobSpriteSheet01(26x34)_23
+    21300048: bobSpriteSheet01(26x34)_24
+    21300050: bobSpriteSheet01(26x34)_25
+    21300052: bobSpriteSheet01(26x34)_26
+    21300054: bobSpriteSheet01(26x34)_27
+    21300056: bobSpriteSheet01(26x34)_28
+    21300058: bobSpriteSheet01(26x34)_29
+    21300060: bobSpriteSheet01(26x34)_30
+    21300062: bobSpriteSheet01(26x34)_31
+    21300064: bobSpriteSheet01(26x34)_32
+    21300066: bobSpriteSheet01(26x34)_33
+    21300068: bobSpriteSheet01(26x34)_34
+    21300070: bobSpriteSheet01(26x34)_35
+    21300072: bobSpriteSheet01(26x34)_36
+    21300074: bobSpriteSheet01(26x34)_37
+    21300076: bobSpriteSheet01(26x34)_38
+    21300078: bobSpriteSheet01(26x34)_39
+    21300080: bobSpriteSheet01(26x34)_40
+    21300082: bobSpriteSheet01(26x34)_41
+    21300084: bobSpriteSheet01(26x34)_42
+    21300086: bobSpriteSheet01(26x34)_43
+    21300088: bobSpriteSheet01(26x34)_44
+    21300090: bobSpriteSheet01(26x34)_45
+    21300092: bobSpriteSheet01(26x34)_46
+    21300094: bobSpriteSheet01(26x34)_47
+    21300096: bobSpriteSheet01(26x34)_48
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 0.5
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 256
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 256
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 222
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 222
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 222
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 222
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 222
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_6
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 222
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 188
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 188
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 188
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 188
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 188
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 188
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 154
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 154
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_16
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 154
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_17
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 154
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_18
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 154
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_19
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 154
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 154
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 120
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 120
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_24
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 120
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_25
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 120
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_26
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 120
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_27
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 120
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_29
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 86
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_30
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 86
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_31
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 86
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_32
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 86
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 86
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_34
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 86
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 52
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 52
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_38
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 52
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_39
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 52
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_40
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 52
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_41
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 52
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_43
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 18
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_44
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 18
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_45
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 18
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_46
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 18
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_47
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 18
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bobSpriteSheet01(26x34)_48
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 18
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

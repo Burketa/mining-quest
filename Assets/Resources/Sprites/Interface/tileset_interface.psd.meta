@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 43516ef3c6d37b34ea63e1e58a39fdf5
+timeCreated: 1494363043
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tileset_interface_panel
+    21300002: tileset_interface_item_frame_1
+    21300004: tileset_interface_item_frame_2
+    21300006: tileset_interface_item_frame_3
+    21300008: tileset_interface_item_frame_4
+    21300010: tileset_interface_options
+    21300012: tileset_interface_item_frame_5
+    21300014: tileset_interface_arrow_left
+    21300016: tileset_interface_arrow_right
+    21300018: tileset_interface_button_2
+    21300020: tileset_interface_button_3
+    21300022: tileset_interface_button_1
+    21300024: tileset_interface_item_frame_6
+    21300026: tileset_interface_button_4
+    21300028: tileset_interface_23
+    21300030: tileset_interface_27
+    21300032: tileset_interface_bar
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset_interface_panel
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 523
+        width: 850
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_item_frame_1
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 909
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_item_frame_2
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 781
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_item_frame_3
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 653
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_item_frame_4
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 521
+        width: 90
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_options
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 407
+        width: 58
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_item_frame_5
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 397
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_arrow_left
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 394
+        width: 61
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_arrow_right
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 394
+        width: 61
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_button_2
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 331
+        width: 222
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_button_3
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 330
+        width: 222
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_button_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 170
+        width: 400
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_item_frame_6
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 269
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_button_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 163
+        width: 206
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tileset_interface_bar
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 480
+        width: 796
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
