@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class InventoryScript : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class InventoryScript : MonoBehaviour
     
     private List<GameObject> buttons = new List<GameObject>();
     private GameObject currentButton;
+
     //Para o metodo de database
     private int i = 0;
 
@@ -27,6 +29,9 @@ public class InventoryScript : MonoBehaviour
     void Start()
     {
         selectedButton = null;
+
+        //Texto padrão sem botão selecionado
+        description.text = "Clique no item para ver sua descrição.";
                                                                                         //Cria uma instancia editavel, talvez seja bom pra fazer uma camada de proteção a mais pra adicionar itens novos, fazer uma dessa, adicionar os itens e comparar com os existentes, só dai sobrescrever os valores
                                                                                         //itemDatabase = ScriptableObject.CreateInstance<ItemDatabase>();
         foreach (Item item in itemDatabase.database)
@@ -59,14 +64,16 @@ public class InventoryScript : MonoBehaviour
             selectedButton.transform.GetChild(2).GetComponent<Image>().enabled = false;
         selectedButton = obj;
         selectedButton.transform.GetChild(2).GetComponent<Image>().enabled = true;
+    }
 
+    public void UpdateDescription(GameObject obj)
+    {
         //Atualiza a descrição
         var aux = itemDatabase.SearchByName(obj.transform.GetChild(0).GetComponent<Image>().sprite.name);
         if (aux.itemDescription != "")
             description.text = aux.itemDescription;
         else
-            description.text = "Nulo";
-
+            description.text = "Sem descrição ainda =(";
     }
 
     public void AddItem(string itemSpriteName, int ammount)

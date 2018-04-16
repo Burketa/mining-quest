@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    public ItemDatabase database;
     public SpriteRenderer tileEscuro, tileClaro, tileTopo, tileBase, tileCeu, sombra;
     public Transform particles;
 
-    private string sceneString;
+    public string sceneString;
     private string spritesPath = "Sprites/Cenarios/";
     private string itemPath = "Prefabs/Item/";
     private string powerdownPath = "Prefabs/Powerdown/";
@@ -24,8 +27,8 @@ public class LevelLoader : MonoBehaviour
         //LoadSkin();         //Coloca o sprite no bob de acordo com a skin selecionada
         LoadSprites();      //Coloca os sprites na cena de acordo com a fase selecionada
         LoadItens();        //Coloca os itens na cena de acordo com a fase selecionada
-        LoadPowerdowns();   //Coloca os pwoerdowns na cena de acordo com a fase selecionada
-        LoadEtc();          //Coloca os enfeites na cena de acordo com a fase selecionada
+        LoadPowerDowns();   //Coloca os pwoerdowns na cena de acordo com a fase selecionada
+        //LoadEtc();          //Coloca os enfeites na cena de acordo com a fase selecionada
         LoadParticles();    //Coloca as particulas do clima na cena de acordo com a fase selecionada
     }
 
@@ -67,17 +70,23 @@ public class LevelLoader : MonoBehaviour
 
     void LoadItens()
     {
-        GetComponent<ItemSpawner>().itens = Resources.LoadAll<GameObject>(itemPath + sceneString);
+        GetComponent<SpawnManager>().possibleItens = database.SearchAllBiome(sceneString, true);
     }
 
-    void LoadPowerdowns()
+    void LoadPowerDowns()
     {
-        GetComponent<PowerdownSpawner>().powerdowns = Resources.LoadAll<GameObject>(powerdownPath); ;
+        GetComponent<SpawnManager>().possiblePowerDowns = database.SearchAllCategory("PowerDown");
     }
+
+    /*
+    void LoadPowerUps()
+    {
+        GetComponent<SpawnManager>().possibleItens = database.SearchAllBiome(sceneString, true);
+    }*/
 
     void LoadEtc()
     {
-
+        ;
     }
 
     void LoadParticles()

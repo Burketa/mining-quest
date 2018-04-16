@@ -24,7 +24,7 @@ public class DatabaseEditor : EditorWindow {
     private int newItemRarity;
     private string newItemCategory;
 
-    private const string DATABASE_PATH = @"Assets/Database/itemDB.asset";
+    private const string DATABASE_PATH = @"Assets/Database/database.asset";
 	
 	private ItemDatabase itens;
 	private Vector2 _scrollPos;
@@ -37,7 +37,7 @@ public class DatabaseEditor : EditorWindow {
 	}
 	
 	void OnEnable() {
-		if (itens == null)
+        if (itens == null)
 			LoadDatabase();
 		
 		state = State.BLANK;
@@ -141,7 +141,7 @@ public class DatabaseEditor : EditorWindow {
 		itens.item(selectedItem).itemName = EditorGUILayout.TextField(new GUIContent("Name: "), itens.item(selectedItem).itemName);
 		itens.item(selectedItem).itemID = int.Parse(EditorGUILayout.TextField(new GUIContent("ID: "), itens.item(selectedItem).itemID.ToString()));
         itens.item(selectedItem).itemQtd = int.Parse(EditorGUILayout.TextField(new GUIContent("Qtd: "), itens.item(selectedItem).itemQtd.ToString()));
-        //itens.item(selectedWeapon).itemSprite = EditorGUILayout.TextField(new GUIContent("Sprite: "), itens.item(selectedWeapon).itemSprite));
+        //itens.item(selectedItem).itemSprite = EditorGUILayout.ObjectField(new Rect(), itens.item(selectedItem).itemSprite.GetType());
         itens.item(selectedItem).itemBiome = EditorGUILayout.TextField(new GUIContent("Biome: "), itens.item(selectedItem).itemBiome.ToString());
         itens.item(selectedItem).itemDescription = EditorGUILayout.TextField(new GUIContent("Description: "), itens.item(selectedItem).itemDescription.ToString());
         itens.item(selectedItem).itemValue = int.Parse(EditorGUILayout.TextField(new GUIContent("Value: "), itens.item(selectedItem).itemValue.ToString()));
@@ -180,9 +180,10 @@ public class DatabaseEditor : EditorWindow {
 		if (GUILayout.Button("Done", GUILayout.Width(100)))
 		{
 			itens.Add(new Item(newItemName, newItemID, newItemQtd, newItemSprite, newItemCategory, newItemBiome, newItemDescription, newItemValue, newItemDropPct, newItemRarity));
-			itens.SortAlphabeticallyAtoZ();
-			
-			newItemName = string.Empty;
+			//itens.SortAlphabeticallyAtoZ();
+            itens.SortByID();
+
+            newItemName = string.Empty;
 			newItemID = 0;
 			EditorUtility.SetDirty(itens);
 			state = State.BLANK;

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    //Skin Manager + Level Manager baiscamente
     public static GameManager instance = null;           //Static instance of GameManager which allows it to be accessed by any other script.
 
     public int chosenLevel = 1; //Cenario escolhido

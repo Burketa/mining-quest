@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SelectInventoryItem : MonoBehaviour
 {
-    public ItemData itemData;
     private GameObject selected;
     private InventoryScript inventoryScript;
 
@@ -17,5 +16,6 @@ public class SelectInventoryItem : MonoBehaviour
     public void OnClick()
     {
         inventoryScript.ChangeSelectedTo(gameObject);
+        inventoryScript.UpdateDescription(gameObject);
     }
 }
