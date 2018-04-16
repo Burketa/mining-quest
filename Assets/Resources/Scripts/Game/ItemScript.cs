@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ItemScript : MonoBehaviour
 {
+    public ItemData itemData;
 	private static int activePopup = 0;
 
     private bool alreadyMoved = false;
@@ -11,13 +12,31 @@ public class ItemScript : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Transform popups;
     private Transform[] popup, references;
-    private Collider2D _collider2D;
-	
-	void Start()
+    private BoxCollider2D _collider2D;
+
+    private void Start()
+    {
+        if(FindObjectOfType<ItemSpawner>().canSpawn)    //Gambiarra, ajeitar um state manager decende depois
+            AddGameComponents();
+    }
+
+    void AddGameComponents()
 	{
         _transform = transform;
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _collider2D = GetComponent<Collider2D>();
+        if(_spriteRenderer == null)
+        {
+            gameObject.AddComponent<SpriteRenderer>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        _collider2D = GetComponent<BoxCollider2D>();
+        if(_collider2D == null)
+        {
+            gameObject.AddComponent<BoxCollider2D>();
+            _collider2D = GetComponent<BoxCollider2D>();
+            _collider2D.size = new Vector2Int(32, 32);
+            _collider2D.offset = new Vector2Int(0, 0);
+        }
         popups = GameObject.FindWithTag("Popups").transform;
         popup = new Transform[popups.childCount];
         for (int i = 0; i < popups.childCount; i++)

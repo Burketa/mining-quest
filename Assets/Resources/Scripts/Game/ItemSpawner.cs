@@ -4,7 +4,8 @@ using System.Collections;
 
 public class ItemSpawner : MonoBehaviour
 {
-    public bool canSpawn = false;
+    public bool canSpawn = false, weightedPct;
+    public int poolSize = 100;
 	public Transform itemReference, itemMin, itemMax, instanceReference;
     public float minSpawnTime = 1.0f, maxSpawnTime = 2.0f;
     public GameObject[] itens;
@@ -28,10 +29,8 @@ public class ItemSpawner : MonoBehaviour
 
     void PopulateItemPool()
     {
-        for(int i = 0; i < 100; i++)
-        {
+        for(int i = 0; i < poolSize; i++)
             itemPool.Add(GenerateRandomItem());
-        }
         if (!canSpawn)
         {
             canSpawn = true;
@@ -41,9 +40,19 @@ public class ItemSpawner : MonoBehaviour
 
     GameObject GenerateRandomItem()
     {
-        index = Random.Range(0, itens.Length);
-        GameObject item = Instantiate(itens[index], new Vector2(0, 400), Quaternion.identity);
-        return item;
+        if(!weightedPct)
+        {
+            index = Random.Range(0, itens.Length);
+            GameObject item = Instantiate(itens[index], new Vector2(0, 400), Quaternion.identity);
+            return item;
+        }
+        else
+        {
+            //Implementar função para gerar itens baseados em chance
+            index = Random.Range(0, itens.Length);
+            GameObject item = Instantiate(itens[index], new Vector2(0, 400), Quaternion.identity);
+            return item;
+        }
     }
 
 	IEnumerator SpawnItem()
