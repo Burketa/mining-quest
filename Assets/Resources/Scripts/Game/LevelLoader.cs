@@ -11,8 +11,6 @@ public class LevelLoader : MonoBehaviour
 
     public string sceneString;
     private string spritesPath = "Sprites/Cenarios/";
-    private string itemPath = "Prefabs/Item/";
-    private string powerdownPath = "Prefabs/Powerdown/";
     private GameManager gameManager;
 
     void Awake ()
@@ -75,7 +73,7 @@ public class LevelLoader : MonoBehaviour
 
     void LoadPowerDowns()
     {
-        GetComponent<SpawnManager>().possiblePowerDowns = database.SearchAllCategory("PowerDown");
+        GetComponent<SpawnManager>().possiblePowerDowns = database.SearchAllCategory("powerdown");
     }
 
     /*

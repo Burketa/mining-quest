@@ -32,8 +32,11 @@ public class SpawnManager : MonoBehaviour
         powerDownMaxY = (int)powerDownMax.transform.localPosition.y;
         spawnPosition = new Vector2(itemReference.localPosition.x, 0);
 
+        Debug.Log("Populando lista de itens");
         PopulatePool(possibleItens, itemPool, itemPoolSize, itemPoolParent, "item");
+        //Debug.Log("Populando lista de powerups");
         //PopulatePool(possiblePowerUps, powerUpPool, powerUpPoolSize, powerUpPoolParent, "powerup");
+        Debug.Log("Populando lista de powerdowns");
         PopulatePool(possiblePowerDowns, powerDownPool, powerDownPoolSize, powerDownPoolParent, "powerdown");
         if(startSpawning)
         { 
@@ -58,7 +61,23 @@ public class SpawnManager : MonoBehaviour
     {
         //Gera um indice random entre as possibilidades de itens
         index = Random.Range(0, possible.Count);
-        Vector2 defaultPosition = new Vector2(0, -400);
+        //print(index);
+        //print(possible.Count);
+        //print(possible[index]);
+        Vector2 defaultPosition = new Vector2();
+        switch (type)
+        {
+            case "item":
+                defaultPosition = new Vector2(0, -400);
+                break;
+            case "powerup":
+                break;
+            case "powerdown":
+                defaultPosition = new Vector2(-100, -400);
+                break;
+            default:
+                break;
+        }
         Quaternion defaultRotation = Quaternion.identity;
         GameObject newObj = new GameObject();
         if (!weightedPct)
@@ -102,8 +121,11 @@ public class SpawnManager : MonoBehaviour
                      */
                 case "powerdown":
                     newObj.AddComponent<PowerdownScript>();
-                    newObj.transform.localScale = new Vector2(0.12f, 0.12f);
-                    _collider.size = new Vector2(414, 600);
+                    if (newObj.name == "pd_skull")
+                    {
+                        newObj.transform.localScale = new Vector2(0.12f, 0.12f);
+                        _collider.size = new Vector2(414, 600);
+                    }
                     break;
                 default:
                     break;
@@ -119,7 +141,7 @@ public class SpawnManager : MonoBehaviour
         {
             while (canSpawnItem)
             {
-                spawnPosition.y = Random.Range(itemMin.position.y, itemMax.position.y);
+                spawnPosition.y = Random.Range(itemMinY, itemMaxY);
                 if (itemPool.Count == 0)
                     PopulatePool(possibleItens, itemPool, itemPoolSize, itemPoolParent, "item");
                 itemPool[0].transform.position = spawnPosition;
@@ -136,7 +158,7 @@ public class SpawnManager : MonoBehaviour
         {
             while (canSpawnPowerUp)
             {
-                spawnPosition.y = Random.Range(powerUpMin.position.y, powerUpMin.position.y);
+                spawnPosition.y = Random.Range(powerUpMinY, powerUpMaxY);
                 if (powerUpPool.Count == 0)
                     PopulatePool(possiblePowerUps, powerUpPool, powerUpPoolSize, powerUpPoolParent, "powerup");
                 powerUpPool[0].transform.position = spawnPosition;
@@ -153,7 +175,7 @@ public class SpawnManager : MonoBehaviour
         {
             while (canSpawnPowerDown)
             {
-                spawnPosition.y = Random.Range(powerDownMin.position.y, powerDownMax.position.y);
+                spawnPosition.y = Random.Range(powerDownMinY, powerDownMaxY);
                 if (powerDownPool.Count == 0)
                     PopulatePool(possiblePowerDowns, powerDownPool, powerDownPoolSize, powerDownPoolParent, "powerdown");
                 powerDownPool[0].transform.position = spawnPosition;

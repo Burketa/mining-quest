@@ -15,8 +15,12 @@ public class ScenarioMovement : MonoBehaviour
 
     void Start()
     {
-        Transform tilesClone = Instantiate(movingResetBack.GetChild(0), new Vector2(1024, 0), Quaternion.identity, movingResetBack);  //Cria um clone do cenario padrao pra fazer o scroll
-        Transform skyClone = Instantiate(movingResetFront.GetChild(0), new Vector2(1024, 0), Quaternion.identity, movingResetFront); //Cria um clone do ceu padrao pra fazer o scroll
+        //Cria um clone do cenario padrao pra fazer o scroll
+        Instantiate(movingResetBack.GetChild(0), new Vector2(1024, 0), Quaternion.identity, movingResetBack);
+        //Cria um clone do cenario padrao pra fazer o scroll
+        Instantiate(movingResetFront.GetChild(0), new Vector2(1024, 0), Quaternion.identity, movingResetFront);
+            //Transform tilesClone = Instantiate(movingResetBack.GetChild(0), new Vector2(1024, 0), Quaternion.identity, movingResetBack);  //Cria um clone do cenario padrao pra fazer o scroll
+            //Transform skyClone = Instantiate(movingResetFront.GetChild(0), new Vector2(1024, 0), Quaternion.identity, movingResetFront); //Cria um clone do ceu padrao pra fazer o scroll
         mrb1 = movingResetBack.GetChild(0);
         mrb2 = movingResetBack.GetChild(1);
         mrf1 = movingResetFront.GetChild(0);

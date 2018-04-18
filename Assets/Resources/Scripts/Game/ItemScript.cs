@@ -7,15 +7,19 @@ public class ItemScript : MonoBehaviour
 	private static int activePopup = 0;
 
     private bool alreadyMoved = false;
-    private Transform _transform;
-    private SpriteRenderer _spriteRenderer;
     private Transform popups;
     private Transform[] popup, references;
+
+    //Otimizações
+    private ScoreManager _scoreManager;
+    private Transform _transform;
+    private SpriteRenderer _spriteRenderer;
     private BoxCollider2D _collider2D;
 
     private void Start()
     {
-        if(FindObjectOfType<SpawnManager>().canSpawnItem)    //Gambiarra, ajeitar um state manager decende depois
+        _scoreManager = FindObjectOfType<ScoreManager>();
+        if (FindObjectOfType<SpawnManager>().canSpawnItem)    //Gambiarra, ajeitar um state manager decende depois
             AddGameComponents();
     }
 
@@ -46,16 +50,34 @@ public class ItemScript : MonoBehaviour
     }
 	
 	
-	private void OnTriggerEnter2D(Collider2D colidedObj)
+	private void OnTriggerEnter2D(Collider2D collidedObj)
 	{
-		if(colidedObj.tag == "Bob")
-		{
-            FindObjectOfType<ScoreManager>().AddPoints(10); //Hardcoded pra testar
-			CheckIfEqual();
-			CloseNext();
-		}
-		else if(colidedObj.tag == "Collector")
-			Destroy(gameObject);
+        if (collidedObj.tag == "Bob")
+        {
+            //Acha o item na database
+            var database = FindObjectOfType<LevelLoader>().database;
+            var item = database.SearchByName(_spriteRenderer.sprite.name);
+
+            //Adiciona seu valor aos pontos
+            _scoreManager.AddPoints(item.itemValue);
+
+            //Atualiza a quantidade na database
+            item.itemQtd++;
+
+            //Emite as particulas (Gambiarra ?)
+            collidedObj.GetComponentInChildren<ParticleSystem>().Emit(50);
+
+            //Loga as informações
+            Debug.Log("Adicionando: " + item.itemValue + " pontos ao placar.");
+            Debug.Log("Adicionando +1 de " + item.itemName);
+            CheckIfEqual();
+            CloseNext();
+        }
+        else if (collidedObj.tag == "Collector")
+        {
+            Debug.Log(gameObject.name + " destruido pelo Collector.");
+            Destroy(gameObject);
+        }
 	}
 
 	private void CheckIfEqual()

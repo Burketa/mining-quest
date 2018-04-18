@@ -20,21 +20,21 @@ public class HoleManager : MonoBehaviour
     {
         state = FindObjectOfType<StateManager>();
 
-        holePosition = holeReference.position;
+        //holePosition = holeReference.position;
 
         holePool = new Transform[ammount];
 
         for (int i = 0; i < ammount; i++)
         {
             holePool[i] = Instantiate(holePrefab, new Vector2(-200, 1000), Quaternion.identity, holeReference).GetComponent<Transform>();
-            holePool[i].gameObject.AddComponent<TimeBody>();
+            //holePool[i].gameObject.AddComponent<TimeBody>();
         }
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (!state.gamePaused && !state.isRewinding)
+        if (!state.gamePaused && !state.isRewinding && !state.gameOver)
         {
             if (index == ammount - 1)
                 index = 0;
