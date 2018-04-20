@@ -44,7 +44,7 @@ MonoBehaviour:
     itemRarity: 1
   - itemName: c_moed1
     itemID: 3
-    itemQtd: 4
+    itemQtd: 8
     itemSprite: {fileID: 21300000, guid: 4d85837f55374b64387ae9de02552f22, type: 3}
     itemCategory: cash
     itemBiome: geral
@@ -54,7 +54,7 @@ MonoBehaviour:
     itemRarity: 1
   - itemName: c_moed2
     itemID: 4
-    itemQtd: 5
+    itemQtd: 10
     itemSprite: {fileID: 21300000, guid: 61a6b23076e5781408d03c220296f8cc, type: 3}
     itemCategory: cash
     itemBiome: geral
@@ -64,7 +64,7 @@ MonoBehaviour:
     itemRarity: 1
   - itemName: c_moed3
     itemID: 5
-    itemQtd: 1
+    itemQtd: 7
     itemSprite: {fileID: 21300000, guid: f1e4323c3c0c4694ab61fdcd826ffe1d, type: 3}
     itemCategory: cash
     itemBiome: geral
@@ -852,15 +852,15 @@ MonoBehaviour:
     itemValue: 1
     itemDropPct: 100
     itemRarity: 1
-  - itemName: interface_tileset
-    itemID: 84
+  - itemName: pd_skull
+    itemID: 179
     itemQtd: 0
-    itemSprite: {fileID: 21300000, guid: 12df121b0f2bced4d8161dddbab7221a, type: 3}
-    itemCategory: 
+    itemSprite: {fileID: 21300000, guid: 161e4977eb3263f479b0995f4ed717c9, type: 3}
+    itemCategory: powerdown
     itemBiome: 
-    itemDescription: 
-    itemValue: 1
-    itemDropPct: 100
+    itemDescription: Powerdown que causa morte.
+    itemValue: -1
+    itemDropPct: 50
     itemRarity: 1
   - itemName: o_ovo1
     itemID: 85
@@ -1435,7 +1435,7 @@ MonoBehaviour:
     itemRarity: 1
   - itemName: s_borbo
     itemID: 143
-    itemQtd: 10
+    itemQtd: 14
     itemSprite: {fileID: 21300000, guid: 9e6503cb4c4730d4d86e1fecedb82dab, type: 3}
     itemCategory: sorte
     itemBiome: geral
@@ -1455,7 +1455,7 @@ MonoBehaviour:
     itemRarity: 5
   - itemName: s_dado2
     itemID: 145
-    itemQtd: 2
+    itemQtd: 8
     itemSprite: {fileID: 21300000, guid: 4a460d799f80bab44a83b674ec2e802b, type: 3}
     itemCategory: sorte
     itemBiome: geral
@@ -1792,14 +1792,4 @@ MonoBehaviour:
     itemDescription: 
     itemValue: 1
     itemDropPct: 10
-    itemRarity: 1
-  - itemName: pd_skull
-    itemID: 179
-    itemQtd: 0
-    itemSprite: {fileID: 21300000, guid: 161e4977eb3263f479b0995f4ed717c9, type: 3}
-    itemCategory: powerdown
-    itemBiome: 
-    itemDescription: Powerdown que causa morte.
-    itemValue: -1
-    itemDropPct: 50
     itemRarity: 1

@@ -18,6 +18,7 @@ public class ItemScript : MonoBehaviour
 
     private void Start()
     {
+        activePopup = 0;
         _scoreManager = FindObjectOfType<ScoreManager>();
         if (FindObjectOfType<SpawnManager>().canSpawnItem)    //Gambiarra, ajeitar um state manager decende depois
             AddGameComponents();
